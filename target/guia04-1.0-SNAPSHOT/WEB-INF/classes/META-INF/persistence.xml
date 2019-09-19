@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <!-- Define Persistence Unit -->
+  <persistence-unit name="cinePU" resource-type="JTA" transaction-type="JTA">
+    <jta-data-source>java:comp/DefaultDataSource</jta-data-source>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Asiento</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.AsientoSala</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.AtributoAsiento</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.AtributoFuncion</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.AtributoSala</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Boleto</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.CaracteristicaAsiento</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.CaracteristicaFuncion</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.CaracteristicaSala</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Clasificacion</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Descuento</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Director</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Factura</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Funcion</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Genero</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.MenuConsumible</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Orden</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.OrdenConsumible</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Pago</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Pelicula</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Sala</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.Sucursal</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.TipoDescuento</class>
+    <class>ues.occ.edu.sv.ingenieria.prn335.cinedata.entity.TipoPago</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cinev2?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
